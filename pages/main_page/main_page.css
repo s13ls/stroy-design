@@ -1,8 +1,9 @@
+@import url(../common/common.css);
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .container {
@@ -24,33 +25,42 @@ a {
 }
 
 .header__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #3c3f41;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #e74c3c;
 }
 
 .header__logo {
   padding: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .header__call {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+}
+
+.header__katalog {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: #3c3f41;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .header__text {
+  font-family: 'Istok Web', sans-serif;
   color: #fff;
-  margin-right: 30px;
+  padding-left: 10px;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .header__phone {
@@ -76,7 +86,6 @@ a {
   width: 100%;
   height: 2px;
   top: 9px;
-  -webkit-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
 }
 
@@ -87,7 +96,6 @@ a {
   position: absolute;
   width: 100%;
   height: 2px;
-  -webkit-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
 }
 
@@ -100,20 +108,17 @@ a {
 }
 
 .header .header__burger.active::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   top: 9px;
 }
 
 .header .header__burger.active::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
   bottom: 9px;
 }
 
 .header .header__burger.active span {
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 
 .header .header__arrow {
@@ -127,24 +132,19 @@ a {
   width: 45%;
   height: 100%;
   background-color: #252323;
-  -webkit-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
   padding: 70px 0 0 0;
 }
 
 .header .header__menu.active {
   right: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   overflow: auto;
 }
 
 .header .header__list {
   display: block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 30px 10px 20px 10px;
   font-size: 30px;
   font-weight: bold;
@@ -152,9 +152,12 @@ a {
   text-align: center;
 }
 
+.header .header__list li {
+  padding-top: 60px;
+}
+
 @media (max-width: 568px) {
   .header__text {
     display: none;
   }
 }
-/*# sourceMappingURL=main_page.css.map */

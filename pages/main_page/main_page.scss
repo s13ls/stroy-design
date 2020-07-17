@@ -1,7 +1,10 @@
+@import '../common/common.css';
+
 * {
     padding: 0; 
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .container {
@@ -22,6 +25,7 @@ a {
 .header {
 
     &__bg {
+        // background-color: #e74c3c;
         background-color: #3c3f41;
     }
 
@@ -29,19 +33,39 @@ a {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: #3c3f41;
+        background-color: #e74c3c;
+        // background-color: #3c3f41;
     }
 
     &__logo {
         padding: 10px;
+        display: flex;
+        align-items: center;
     }
     &__call {
         display: flex;
         align-items: center;
     }
+
+    &__katalog {
+        width: 100px;
+        height: 40px;
+        color: white;
+        background-color: #3c3f41;
+        border: 2px solid white;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
     &__text {
+        font-family: 'Istok Web', sans-serif;
         color: #fff;
-        margin-right: 30px;
+        padding-left: 10px;
+        font-size: 25px;
+        font-weight: bold;
     }
     &__phone {
         margin: 0;
@@ -136,6 +160,10 @@ a {
         text-transform: uppercase;
 
         text-align: center;
+
+        li {
+            padding-top: 60px;
+        }
 
     }
 
