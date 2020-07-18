@@ -113,6 +113,10 @@ a {
   height: 100%;
 }
 
+.header__list {
+  display: none;
+}
+
 .header__list_2 {
   height: 40px;
   align-items: center;
