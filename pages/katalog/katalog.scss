@@ -394,12 +394,12 @@ a {
 .katalog {
     width: 100%;
     height: auto;
+    height: 1000px;
 
     .container {
         display: flex;
         justify-content: center;
         height: 1000px;
-        min-height: 1000px;
     }
 
     &__body {

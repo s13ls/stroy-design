@@ -350,13 +350,13 @@ a {
 .katalog {
   width: 100%;
   height: auto;
+  height: 1000px;
 }
 
 .katalog .container {
   display: flex;
   justify-content: center;
   height: 1000px;
-  min-height: 1000px;
 }
 
 .katalog__body {
