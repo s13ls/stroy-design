@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Text&family=Istok+Web:wght@700&family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed&family=Staatliches&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Text&family=Istok+Web:wght@700&family=Open+Sans+Condensed:wght@300&family=Roboto+Condensed&family=Staatliches&display=swap");
 .fonts {
   font-family: 'Open Sans Condensed', sans-serif;
   font-family: 'Roboto Condensed', sans-serif;
@@ -29,37 +28,12 @@ a {
   cursor: pointer;
 }
 
-.fonts {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-family: 'Roboto Condensed', sans-serif;
-  font-family: 'Staatliches', cursive;
-  font-family: 'Francois One', sans-serif;
-}
-
-* {
-  padding: 0;
+p {
   margin: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .header {
-  height: 100vh;
+  height: auto;
 }
 
 .header__bg {
@@ -78,10 +52,6 @@ a {
   display: flex;
   justify-content: left;
   align-items: center;
-}
-
-.header .header__burger-ul li {
-  margin: 0 40px;
 }
 
 .header__row {

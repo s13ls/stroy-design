@@ -34,11 +34,11 @@ function updateTask(name){
     gulp.task('watch', function() {
         gulp.watch(`pages/${name}/${name}.+(scss|sass)`, gulp.parallel('sass')); 
         gulp.watch(`pages/${name}/index.html`, gulp.parallel('code'));         
-        gulp.watch(`pages/scripts/*.js`, gulp.parallel('scripts'));     
+        gulp.watch(`pages/${name}/js/*.js`, gulp.parallel('scripts'));     
     });
 
     gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));
 }
 
-sassTask("main_page")
-updateTask("main_page")
+sassTask("katalog")
+updateTask("katalog")
