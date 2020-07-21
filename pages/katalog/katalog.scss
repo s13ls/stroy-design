@@ -15,6 +15,10 @@ ul {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .header {
     height: auto;
 
@@ -110,18 +114,38 @@ ul {
 
     &__list {
         display: none;
+        list-style: none;
         &_2 {
             height: 40px;
             align-items: center;
             display: flex;
             justify-content: space-around;
+            list-style: none;
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // width: 17%;
+                height: 100%;
+                transition: 0.2s all ease;
+
+                &:hover {
+
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
             
             a {
-                color: #111;
+                color: #333;
                 transition: all .3s;
-                &:hover {
-                    color: #fff;
-                }
+                font-weight: bold;
+                text-decoration: none;
+                // &:hover {
+                //     color: #fff;
+                // }
             }
             &-bg {
                 width: 100%;
@@ -374,6 +398,8 @@ ul {
     .container {
         display: flex;
         justify-content: center;
+        height: 1000px;
+        min-height: 1000px;
     }
 
     &__body {
@@ -383,7 +409,7 @@ ul {
     }
 
     &__title {
-        padding: 15px 25px;
+        padding: 40px 25px;
         @include text (32px, bold, #333)
     }
 
@@ -394,6 +420,11 @@ ul {
         justify-content: space-between;
         width: 100%;
         height: auto;
+        padding-bottom: 50px;
+
+        a {
+            text-decoration: none;
+        }
     }
 
     &__item {
@@ -405,11 +436,17 @@ ul {
         padding: 15px;
         display: flex;
         justify-content: space-between;
+        transition: 0.2s all ease;
+
+        &:hover {
+            box-shadow: 0 0 15px 8px silver;
+        }
 
         &-img {
             width: 49%;
             height: 100%;
-            border: 1px solid silver;
+            // border: 1px solid silver;
+            cursor: pointer;
 
             img {
                 width: 100%;
@@ -417,26 +454,102 @@ ul {
             }
         }
 
-        &-producer {
+        &-inf {
             width: 49%;
             height: 100%;
-            border: 1px solid silver;
-            // display: flex;
-            // flex-wrap: wrap;
+            // border: 1px solid silver;
+        }
+
+        &-title {
+            width: 100%;
+            height: 35px;
             padding: 10px;
+            margin-top: 7px;
+            @include text (18px, bold, #e74c3c);
+            display: flex;
+            align-items: center;
+        }
+
+        &-producer {
+            padding: 10px;
+            width: 100%;
+            height: calc(100% - 35px);
+
 
             div {
                 height: 20px;
                 margin-right: 10px;
                 float: left;
-                @include text (14px, regular, silver)
+                @include text (14px, regular, silver);
+                cursor: pointer;
+
+                &:hover {
+                    color: #e74c3c
+                }
             }
         }
     }
 }
 
 .sidebar {
-    width: 20%;
-    height: 700px;
-    background-color: red;
+    width: 200px;
+    height: 100%;
+    background-color: #ece7e7;
+    padding-top: 155px;
+
+    &__item {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid silver;
+        transition: 0.2s all ease;
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            @include text (16px, regular, #333);
+        }
+
+        &:first-child {
+            border-top: 1px solid silver;
+        }
+
+        &:hover {
+            background-color: silver;
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 250px;
+    background-color: silver;
+
+    &__body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        width: 175px;
+        height: 250px;
+        padding-top: 25px;
+        text-align: center;
+
+        p {
+            @include text (18px, regular, #333);
+            padding-bottom: 12px;
+        }
+
+        a {
+            @include text (18px, regular, #333);
+            padding-bottom: 12px;
+            text-decoration: none;
+        }
+    }
 }
