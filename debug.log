@@ -1,0 +1,4 @@
+[0720/172035.748:ERROR:registration_protocol_win.cc(64)] BuildSecurityDescriptor: Имя службы доступа к сети задано неверно. (0x4B4)
+[0720/172035.752:ERROR:crashpad_client_win.cc(508)] CreateProcess: Недостаточно ресурсов памяти для обработки этой команды. (0x8)
+[0720/172035.815:ERROR:process_info.cc(359)] UncheckedAllocate
+[0720/172035.815:ERROR:process_info.cc(359)] UncheckedAllocate
