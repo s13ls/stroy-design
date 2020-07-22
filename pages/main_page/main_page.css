@@ -6,6 +6,11 @@
   font-family: 'Francois One', sans-serif;
 }
 
+.colors {
+  color: #e74c3c;
+  color: #df4231;
+}
+
 * {
   padding: 0;
   margin: 0;
