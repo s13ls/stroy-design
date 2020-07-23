@@ -252,12 +252,12 @@
                                                 <p>Tornado/Дуб Самарас- 660р/м2</p>
                                             </div>
                                             <div class="katalog__item-price">
-                                                <p>1000,00 ₽.</p>
+                                                <p class="goods_price">1000,00 ₽</p>
                                                 <div class="katalog__item-count">
-                                                    <button id="diminish_goods_count"><i class="fas fa-minus"></i></button>
-                                                    <input type="text" value="0" id="goods_count">
-                                                    <button id="add_goods_count"><i class="fas fa-plus"></i></button>
-                                                    <div id="add_cart"><i class="fas fa-cart-plus"></i></i></div>
+                                                    <button class="diminish_goods_count" onclick="diminishGoodsCount()"><i class="fas fa-minus"></i></button>
+                                                    <input type="text" value="0" class="goods_count">
+                                                    <button class="add_goods_count" onclick="addGoodsCount()"><i class="fas fa-plus"></i></button>
+                                                    <div class="add_cart"><i class="fas fa-cart-plus"></i></i></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -272,12 +272,12 @@
                                                 <p>Tornado/Дуб Самарас- 660р/м2</p>
                                             </div>
                                             <div class="katalog__item-price">
-                                                <p>1000,00 ₽.</p>
+                                                <p class="goods_price">1500,00 ₽</p>
                                                 <div class="katalog__item-count">
-                                                    <button id="diminish_goods_count"><i class="fas fa-minus"></i></button>
-                                                    <input type="text" value="0" id="goods_count">
-                                                    <button id="add_goods_count"><i class="fas fa-plus"></i></button>
-                                                    <div id="add_cart"><i class="fas fa-cart-plus"></i></i></div>
+                                                    <button class="diminish_goods_count" onclick="diminishGoodsCount()"><i class="fas fa-minus"></i></button>
+                                                    <input type="text" value="0" class="goods_count">
+                                                    <button class="add_goods_count" onclick="addGoodsCount()"><i class="fas fa-plus"></i></button>
+                                                    <div class="add_cart"><i class="fas fa-cart-plus"></i></i></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -307,15 +307,13 @@
                 <a href="">Contact us</a>
             </div>
             <div class="footer__item">
-                <a href="">Местонахождение</a>
-            </div>
-            <div class="footer__item">
                 <p><i class="fas fa-envelope"></i> safasf@mail.ru</p>
                 <p><i class="fas fa-phone-alt"></i> т.(3822)201-103</p>
                 <p><i class="fas fa-phone-alt"></i> т.(3822)440-114</p>
             </div>
         </div>
     </div>
+    <div class="footer__bottom"></div>
 </section>
 
 <script
@@ -324,5 +322,6 @@
     crossorigin="anonymous">
 </script>
 <script src="https://kit.fontawesome.com/d1f9bcfe23.js" crossorigin="anonymous"></script>
+<script src="./js/goods_script.js"></script>
 </body>
 </html>
