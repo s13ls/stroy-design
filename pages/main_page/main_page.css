@@ -487,6 +487,10 @@ p {
   font-size: 22px;
 }
 
+.catalog__btn a {
+  padding: 15px 60px;
+}
+
 @media (max-width: 768px) {
   .catalog__btn {
     height: 130px;
@@ -523,6 +527,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 40px;
 }
 
 .exclusive__block {
@@ -586,7 +591,7 @@ p {
 }
 
 .slider {
-  padding: 50px 0px;
+  padding: 50px 0 0 0;
   position: relative;
 }
 
@@ -594,7 +599,16 @@ p {
   text-align: center;
   font-size: 50px;
   font-weight: normal;
-  padding: 40px 0 0 0;
+  color: #fff;
+}
+
+.slider__title-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #e74c3c;
 }
 
 .slider__item {
@@ -604,8 +618,8 @@ p {
 }
 
 .slider__item img {
-  width: 430px;
-  height: 330px;
+  width: 520px;
+  height: 360px;
 }
 
 .slider__btn {
@@ -636,8 +650,13 @@ p {
   font-size: 22px;
 }
 
+.slider__btn a {
+  padding: 15px 20px;
+}
+
 .slider__bg {
-  background-color: #adaaaa;
+  padding-top: 40px;
+  background-color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -647,12 +666,21 @@ p {
 }
 
 @media (max-width: 468px) {
+  .slider {
+    padding: 0;
+  }
   .slider__title {
     font-size: 40px;
   }
   .slider__item img {
+    padding: 15px;
     width: 280px;
     height: 230px;
+  }
+  .slider__btn button {
+    height: 40px;
+    width: 140px;
+    text-align: center;
   }
 }
 
@@ -684,34 +712,40 @@ p {
 .slick-arrow {
   position: absolute;
   top: 50%;
-  margin: -50px -20px 0 -20px;
+  margin: -30px -50px 0 -50px;
   z-index: 10;
   font-size: 0;
-  width: 25px;
+  width: 50px;
   height: 60px;
   border: none;
   outline: none;
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .slick-arrow {
+    margin: -40px 0px 0 0px;
+  }
+}
+
 @media (max-width: 468px) {
   .slick-arrow {
-    width: 20px;
+    width: 25px;
     height: 60px;
-    margin: -40px 0 0 0;
+    margin: -40px 0px 0 0px;
   }
 }
 
 /* Стрелка влево */
 .slick-arrow.slick-prev {
   left: 0;
-  background: url("../img/sl-arrow_l.svg") 0 0/100% no-repeat;
+  background: url("../img/sl-arrow_l(1).svg") 0 0/100% no-repeat;
 }
 
 /* Стрелка вправо */
 .slick-arrow.slick-next {
   right: 0;
-  background: url("../img/sl-arrow_r.svg") 0 0/100% no-repeat;
+  background: url("../img/sl-arrow_r(1).svg") 0 0/100% no-repeat;
 }
 
 /* Стрелка не активная */
@@ -730,7 +764,7 @@ p {
 /* Активная точка */
 .slick-dots li.slick-active button {
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #3c3f41;
 }
 
 /* Элемент точки */
@@ -738,7 +772,7 @@ p {
   font-size: 0;
   width: 10px;
   height: 10px;
-  background-color: #fff;
+  background-color: #3c3f41;
   border: none;
   border-radius: 50%;
   outline: none;
