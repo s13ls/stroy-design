@@ -390,45 +390,6 @@
 
 //=== main_page ===//------------------------------------------------------------------------> 
 
-.sidebar {
-    width: 200px;
-    height: 200%;
-    background-color: #ece7e7;
-    padding-top: 155px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 12;
-
-    &__item {
-        width: 100%;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-bottom: 1px solid silver;
-        transition: 0.2s all ease;
-        cursor: pointer;
-
-        a {
-            text-decoration: none;
-            @include text (16px, regular, #333);
-        }
-
-        &:first-child {
-            border-top: 1px solid silver;
-        }
-
-        &:hover {
-            background-color: silver;
-        }
-    }
-
-    @media(max-width: 768px) {
-        display: none;
-    }
-    
-}
 
 .catalog .container {
     display: flex;
@@ -440,7 +401,7 @@
     width: 100%;
     
     &__bg {
-        background-image: url(../img/bg_catalog.jpg);
+        background-image: url('img/bgcatalog.jpg');
     }
 
         &__block {
@@ -766,14 +727,14 @@
 /* Стрелка влево */
 .slick-arrow.slick-prev{
     left: 0;
-    background: url('../img/sl-arrow_l(1).svg') 0 0 / 100% no-repeat;
+    background: url('img/sl-arrow_l(1).svg') 0 0 / 100% no-repeat;
 }
 
 /* Стрелка вправо */
 .slick-arrow.slick-next{
     right: 0;
     
-    background: url('../img/sl-arrow_r(1).svg') 0 0 / 100% no-repeat;
+    background: url('img/sl-arrow_r(1).svg') 0 0 / 100% no-repeat;
 }
 
 /* Стрелка не активная */
