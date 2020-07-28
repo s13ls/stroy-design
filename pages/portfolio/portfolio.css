@@ -1,4 +1,8 @@
 @import url(../common/common.css);
+body.lock {
+  overflow: hidden;
+}
+
 p {
   margin: 0;
 }
@@ -211,6 +215,9 @@ a {
 }
 
 @media (max-width: 768px) {
+  .header__portfolio {
+    display: none;
+  }
   .header__call {
     margin-left: 0;
     padding-right: 30px;
@@ -576,9 +583,13 @@ a {
 
 @media (max-width: 460px) {
   .portfolio__item {
-    width: 275px;
-    height: 150px;
+    width: 260px;
+    height: 160px;
     margin: 0 auto 25px auto;
+  }
+  .portfolio__item img {
+    width: 240px;
+    height: 160px;
   }
   .portfolio__item-title, .portfolio__item-company, .portfolio__item-goods {
     height: 25px;
@@ -722,6 +733,13 @@ a {
   top: 10px;
   font-size: 30px;
   color: #e74c3c;
+}
+
+@media (max-width: 450px) {
+  .popup__close {
+    right: 0;
+    top: -50px;
+  }
 }
 
 .footer {

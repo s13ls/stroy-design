@@ -31,10 +31,12 @@ $(document).ready(function() {
 
     $('.portfolio__item').click(function(event) {
         $('.popup').addClass('active');
+        $('body').addClass('lock');
     });
 
     $('.popup__close').click(function(event) {
         $('.popup').removeClass('active');
+        $('body').removeClass('lock');
     });
     
     

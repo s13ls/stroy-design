@@ -8,7 +8,7 @@
 }
 
 body.lock {
-    
+    overflow: hidden;
 }
 
 p {
@@ -222,6 +222,9 @@ a {
     }
     
     @media (max-width: 768px) {
+        &__portfolio {
+            display: none;
+        }
         &__call {
             margin-left: 0;
             padding-right: 30px;
@@ -616,9 +619,14 @@ a {
 
     @media (max-width: 460px){
         &__item {
-            width: 275px;
-            height: 150px;
+            width: 260px;
+            height: 160px;
             margin: 0 auto 25px auto;
+
+            img {
+                width: 240px;
+                height: 160px;
+            }
 
             &-title, &-company, &-goods {
                 height: 25px;
@@ -764,6 +772,13 @@ a {
         top: 10px;
         font-size: 30px;
         color: #e74c3c;
+    }
+    @media (max-width: 450px) {
+        &__close {
+            right: 0;
+            top: -50px;
+        }
+        
     }
 
 }
