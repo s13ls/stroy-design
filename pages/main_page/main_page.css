@@ -381,49 +381,6 @@ p {
   }
 }
 
-.sidebar {
-  width: 200px;
-  height: 200%;
-  background-color: #ece7e7;
-  padding-top: 155px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 12;
-}
-
-.sidebar__item {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid silver;
-  transition: 0.2s all ease;
-  cursor: pointer;
-}
-
-.sidebar__item a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: regular;
-  color: #333;
-}
-
-.sidebar__item:first-child {
-  border-top: 1px solid silver;
-}
-
-.sidebar__item:hover {
-  background-color: silver;
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    display: none;
-  }
-}
-
 .catalog .container {
   display: flex;
   justify-content: center;
@@ -435,7 +392,7 @@ p {
 }
 
 .catalog__bg {
-  background-image: url(../img/bg_catalog.jpg);
+  background-image: url("img/bgcatalog.jpg");
 }
 
 .catalog__block {
@@ -739,13 +696,13 @@ p {
 /* Стрелка влево */
 .slick-arrow.slick-prev {
   left: 0;
-  background: url("../img/sl-arrow_l(1).svg") 0 0/100% no-repeat;
+  background: url("img/sl-arrow_l(1).svg") 0 0/100% no-repeat;
 }
 
 /* Стрелка вправо */
 .slick-arrow.slick-next {
   right: 0;
-  background: url("../img/sl-arrow_r(1).svg") 0 0/100% no-repeat;
+  background: url("img/sl-arrow_r(1).svg") 0 0/100% no-repeat;
 }
 
 /* Стрелка не активная */
