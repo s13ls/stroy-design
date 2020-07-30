@@ -40,19 +40,7 @@ $(document).ready(function() {
         return false;
     });
 
-    $('.slider').slick({
-        slidesToShow: 2,
-        dots: true,
-        adaptiveHeight: true,
-        responsive:[
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
+    
 
     
     
