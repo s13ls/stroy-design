@@ -12,7 +12,6 @@
   crossorigin="anonymous"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="./js/import_header.js"></script>
 </head>
 <body>
     
@@ -35,7 +34,7 @@
                     </div>
                     <nav id="menu" class="header__menu">
                         <ul class="header__list">
-                            <li><a href="#header">Home</a></li>
+                            <li><a href="#header" class="login">ВХОД</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#services">Servicing</a></li>
                             <li><a href="">Portfolio</a></li>
@@ -76,7 +75,40 @@
 
     </section>
 
-    
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <div href="#" class="popup__close">X</div>
+                <div class="popup__block">
+                    <div class="popup__title">
+                        ВХОД
+                    </div>
+                    
+                    <div class="popup__input">
+                        <div class="popup__input-login">
+                            <p>Логин</p>
+                            <input type="text">
+                        </div>
+                        <div class="popup__input-password">
+                            <p>Пароль</p>
+                            <input type="text">
+                        </div>
+                        <div class="popup__input-email">
+                            <p>Email</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <a>Еще не зарегестрировались ?</a>
+                    <div class="popup__btn">
+                        <button>ВХОД</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 <div class="catalog__bg">
