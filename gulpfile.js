@@ -40,5 +40,5 @@ function updateTask(name){
     gulp.task('default', gulp.parallel('sass', 'browser-sync', 'watch'));
 }
 
-sassTask("landscape")
-updateTask("landscape")
+sassTask("contacts")
+updateTask("contacts")
